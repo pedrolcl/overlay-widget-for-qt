@@ -4,6 +4,8 @@ This project provides an Overlay QWidget class, that can be used with a modal QD
 
 ![Screenshot on Windows 10](screenshot_windows.png)
 
+![Screenshot on Linux with dark theme](screenshot_linux_dark.png)
+
 This project is derived from the [Order Form](https://doc.qt.io/qt-6/qtwidgets-richtext-orderform-example.html) example.
 
 ## Why to use this
@@ -33,5 +35,7 @@ You may build this project with Qt5 or Qt6.
 
 ## License
 
-Copyright (C) 2023 Pedro López-Cabanillas
+Copyright © 2023 Pedro López-Cabanillas  
 SPDX-License-Identifier: BSD-3-Clause
+
+[detailed License document](LICENSE)
