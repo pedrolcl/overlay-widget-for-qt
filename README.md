@@ -14,8 +14,8 @@ Some platforms, like Windows 10, do not dim/darken/blur automatically the parent
 
 ## How to use this
 
-You only need to instantiate the Overlay widget just before opening a modal dialog, with the parent window as parent. The overlay will automatically be shown, and hidden upon destruction of the instance.
-
+You only need to instantiate the Overlay widget just before opening a modal dialog, with the parent window as parent. The overlay will automatically be shown, and hidden upon destruction of the instance, in a typical RAII fashion:
+```C++
     void MainWindow::openDialog()
     {
         Overlay overlay(this);
@@ -28,7 +28,7 @@ You only need to instantiate the Overlay widget just before opening a modal dial
                          dialog.sendOffers());
         }
     }
-
+```
 The `MainWindow::openDialog()` and `MainWindow::printFile()` methods use the Overlay class.
 
 You may build this project with Qt5 or Qt6.
